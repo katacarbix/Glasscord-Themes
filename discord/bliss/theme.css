@@ -2,7 +2,7 @@
  * @name Bliss
  * @description A minimal flat theme with dark and light mode. Meant to be used with Glasscord.
  * @author katacarbix
- * @version 1.4
+ * @version 1.6
  * @source https://github.com/katacarbix/discord-themes
 **/
 
@@ -22,13 +22,14 @@
 
 .theme-dark {
 	/* background colors */
-	--background-main: #111;
+	--background-main: #161616;
+	--background-panels: #111;
 	--background-sidebar: #000c;
 	--background-accent: #555;
 	--background-round-btn: #4c4c4c;
 	--background-floating: #181818;
 	--background-floating-header: #161616;
-	--background-attachment: #181818;
+	--background-attachment: #090909;
 	--background-textbox: #292929;
 	
 	--background-titlebar: #000;
@@ -50,13 +51,14 @@
 }
 .theme-light {
 	/* background colors */
-	--background-main: #fff;
+	--background-main: #fafafa;
+	--background-panels: #fff;
 	--background-sidebar: #fffc;
 	--background-accent: #333;
 	--background-round-btn: #eee;
 	--background-floating: #fff;
 	--background-floating-header: #fff;
-	--background-attachment: #181818;
+	--background-attachment: #fff;
 	--background-textbox: #f3f3f3;
 	
 	--background-titlebar: #fff;
@@ -132,6 +134,20 @@ body {
 	background-color: transparent !important;
 }
 
+/* Top bar and right panels */
+.title-3qD0b-,
+.container-1r6BKw,
+.members-1998pB,
+.nowPlayingColumn-2sl4cE {
+	background-color: var(--background-panels) !important;
+}
+
+/* Cards */
+.cardPrimary-1Hv-to,
+.embedFull-2tM8-- {
+	background-color: var(--background-attachment);
+}
+
 /* Floating dialogs and modals */
 .contentWrapper-2txmjs,
 .messagesPopoutWrap-1MQ1bW,
@@ -184,6 +200,11 @@ body {
 /* Search box */
 .searchBar-3dMhjb {
 	background-color: var(--background-textbox);
+}
+
+/* Spoiler text */
+.spoilerText-3p6IlD.hidden-HHr2R9 {
+	background-color: var(--background-accent) !important;
 }
 
 /* Stream preview */
